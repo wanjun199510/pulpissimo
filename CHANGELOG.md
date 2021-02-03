@@ -6,6 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Bump `pulp_soc` to `v2.1.0` and updated bootcode to add support for the newest
+  PULPissimo compatible version of ibex with a new OBI to TCDM protocol adapter.
+- Various smaller clean-ups and improvements of the Makefiles and simulation TCL scripts
+### Added
+- Added support for Bender as dependency management tool
+- Support for ZSH for the VSIM setup script (`setup/vsim.sh`)
+### Fixed
+- Added better handshaking behavior of mockup FLL modules in FPGA port to avoid
+  deadlocks when trying to interact with the FLL in the FPGA port.
+- With `pulp_soc` `v2.1.0` a serious bug in the interleaved SRAM address line
+  connection is fixed which caused part of the memory to be inaccessible.
+- Remove timing constraints on unmapped signals for FPGA ports
+
 ## [6.0.0] - 2020-12-11
 
 ### Changed
