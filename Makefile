@@ -127,7 +127,7 @@ endif
 ## Build the pulp SDK from source
 build-pulp-sdk: pulp-sdk
 pulp-sdk: check-env-pulp-gcc
-	git clone https://github.com/pulp-platform/pulp-sdk.git -b 2019.12.06; \
+	git clone https://github.com/wanjun199510/pulp-sdk.git -b 2019.12.06; \
 	cd pulp-sdk; \
 	source configs/pulpissimo.sh; \
 	source configs/platform-rtl.sh; \
